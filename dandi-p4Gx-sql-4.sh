@@ -25,6 +25,3 @@ fi
 
 rm 2019-sample.csv 2019-sample-1.csv 2019-sample-2.csv
 
-# rm -v !("2019-oct-sample.csv"|"2019-nov-sample.csv"|"2019-sample-clean.csv"|"data.sh")
-# cut -d$',' -f 1-6 2019-sample-1.csv | paste 2019-sample-2.csv - | head | csvlook
-# csvcut -c 7 2019-sample-1.csv | awk -F. '{print $1,$NF}'| awk '$1=$1' FS=" " OFS=","  |sed -e '1s/category_code/category/' -e '1s/category_code/product_name/' | paste -d ',' 2019-sample-1.csv -

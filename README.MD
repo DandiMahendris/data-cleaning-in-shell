@@ -1,3 +1,7 @@
+### Username / discourseID
+--------- dandi-p4Gx --------------
+
+
 <!-- Table of Content -->
 <details>
   <summary>Table of Contents</summary>
@@ -26,6 +30,7 @@
 
 <!-- About The Project -->
 ## About the Project 
+Data Cleaning in Shell
 
 ### Learning Objective
 * Mengaplikasikan perintah bash untuk pemrosesan data
@@ -33,31 +38,13 @@
 * Melakukan Cleaning Data di Shell
 * Melakukan penggabungan, filtering column, filtering field, splitting data untuk menampilkan produk yang terjual
 
-### Background
-Anda diminta untuk membersihkan data traffic ecommerce di tempat anda bekerja. Data yang diberikan adalah data bulan oktober dan november tahun 2019. Atasan anda ingin melakukan analisis produk yang terjual. Anda diminta untuk membersihkan datanya, dan menyisakan data-data yang relevan
-
-Berikut gambaran awal data yang di berikan:
-[![Gambaran awal data][screenshot-1]](....)
-
-[![Gambaran awal data-1][screenshot-2]](...)
-
-Dari data di atas diminta untuk melakukan
-1. **Menggabungkan kedua data** ke dalam 1 file
-2. **Menyeleksi kolom yang relevan** untuk analisis produk.
-3. **Melakukan filtering** untuk mendapatkan **aktivitas pembelian saja.**
-4. **Melakukan splitting data kategori produk dan nama product** pada kolom category
-code
-
-**Note** : category produk berada di posisi kata pertama dan nama produk di posisi kata
-terakhir dari kolom category_code
-
 ## Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section.
 
-* [![WSL]][WSL-url]
-* [![Ubuntu]][Ubuntu-url]
-* [![Csvkit]][csvkit-url]
+* WSL
+* Ubuntu
+* csvkit
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -77,4 +64,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- Usage Example -->
 ## Usage
+
+* First, Run the program by `bash dandi-p4Gx-sql-4.sh` or '.\dandi-p4Gx-sql-4.sh'
+
+* the program result is `2019-sample-clean.csv`
+
+* `cat 2019-sample-clean.csv | grep electronics | grep smartphone | awk -F ',' '{print $5}' | sort | uniq -c | sort -nr`
+
+* or run using `bash filtering.sh`
+
 
