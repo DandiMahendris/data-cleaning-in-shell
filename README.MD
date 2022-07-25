@@ -72,7 +72,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * the program result is 
 > `2019-sample-clean.csv`
 
-<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Data.png" width="30%"></img>
+<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Data.png" width="90%"></img>
 
 * Run 2019-sample-clean.csv to get electronics and smartphone category 
 
@@ -86,6 +86,6 @@ cat 2019-sample-clean.csv | grep electronics | grep smartphone | awk -F ',' '{pr
 
 ## Output
 
-<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Hasil%20Output.png" width="30%"></img>
+<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Hasil%20Output.png" width="90%"></img>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
