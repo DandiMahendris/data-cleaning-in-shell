@@ -54,20 +54,25 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ### Installation
 1. Install WSL and Ubuntu 
 2. Install csvkit adds-on
-   '''sh
+   ```sh
    pip install csvkit
-   '''
+   ```
 3. Check csvkit already installed on your PC
-   '''
+   ```
    pip list | grep csvkit
-   '''
+   ```
 
 <!-- Usage Example -->
 ## Usage
 
-* First, Run the program by `bash dandi-p4Gx-sql-4.sh` or '.\dandi-p4Gx-sql-4.sh'
+* Data used in this program can collectable from [csv data](https://drive.google.com/file/d/1rKkUQU-sXIDka3rVNBahp6q3wDhrPY-1/view)
 
-* the program result is `2019-sample-clean.csv`
+* First, Run the program by `bash dandi-p4Gx-sql-4.sh` or `.\dandi-p4Gx-sql-4.sh`
+
+* the program result is 
+> `2019-sample-clean.csv`
+
+[![picture of output][output hasil script]]
 
 * `cat 2019-sample-clean.csv | grep electronics | grep smartphone | awk -F ',' '{print $5}' | sort | uniq -c | sort -nr`
 
