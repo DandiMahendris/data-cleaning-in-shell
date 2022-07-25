@@ -69,10 +69,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * First, Run the program by `bash dandi-p4Gx-sql-4.sh` or `.\dandi-p4Gx-sql-4.sh`
 
-* the program result is 
+The program result is 
 > `2019-sample-clean.csv`
 
-<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Data.png" width="90%"></img>
+<img src="https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Data.png" width="60%"></img>
 
 * Run 2019-sample-clean.csv to get electronics and smartphone category 
 
