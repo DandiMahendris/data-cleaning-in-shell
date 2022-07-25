@@ -72,10 +72,17 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * the program result is 
 > `2019-sample-clean.csv`
 
-[![picture of output][output hasil script]]
+[![picture of output][output hasil script]](https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Data.png)
 
-* `cat 2019-sample-clean.csv | grep electronics | grep smartphone | awk -F ',' '{print $5}' | sort | uniq -c | sort -nr`
+* Run 2019-sample-clean.csv to get electronics and smartphone category 
 
-* or run using `bash filtering.sh`
+```
+cat 2019-sample-clean.csv | grep electronics | grep smartphone | awk -F ',' '{print $5}' | sort | uniq -c | sort -nr
+```
 
+* or run simply using `bash filtering.sh`
+
+## Output
+
+[hasilt filtering](https://github.com/DandiMahendris/data-cleaning-in-shell/blob/master/Picture/Hasil%20Output.png)
 
